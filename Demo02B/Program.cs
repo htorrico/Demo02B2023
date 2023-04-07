@@ -10,7 +10,7 @@ namespace Demo02B
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hola mundo");
+            //Console.WriteLine("Hola mundo");
 
             //Declarar variables
             int Edad = 0;
@@ -33,11 +33,21 @@ namespace Demo02B
             };
 
 
-            persona.DevolverNombresCompletos();
+            //persona.DevolverNombresCompletos();
+
+            //int doble=persona.MultiplicarEdad(5);
+            //Console.WriteLine(doble);
+
+            Triangulo triangulo = new Triangulo
+            {
+                LadoA = 7,
+                LadoB = 24,
+                LadoC = 25
+            };
+
+            double area= triangulo.CalcularArea();
             
-            int doble=persona.MultiplicarEdad(5);
-            Console.WriteLine(doble);
-            
+            Console.WriteLine(area);
 
             Console.Read();
         }
